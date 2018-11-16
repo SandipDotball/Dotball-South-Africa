@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0001 0.403 21.5331 0.403 21.5331 21.9369 0.0001 21.9369"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1178.000000, -1970.000000)">
+            <g id="Group-3" transform="translate(1178.000000, 1970.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M10.7671,0.4029 C4.8201,0.4029 0.0001,5.2239 0.0001,11.1699 C0.0001,17.1169 4.8201,21.9369 10.7671,21.9369 C16.7141,21.9369 21.5331,17.1169 21.5331,11.1699 C21.5331,5.2239 16.7141,0.4029 10.7671,0.4029 Z" id="Fill-1" fill="#038CFF" mask="url(#mask-2)"></path>
+                <path d="M13.1641,7.7969 L12.0321,7.7969 C11.6331,7.7969 11.5501,7.9599 11.5501,8.3729 L11.5501,9.3719 L13.1641,9.3719 L13.0091,11.1259 L11.5501,11.1259 L11.5501,16.3639 L9.4581,16.3639 L9.4581,11.1489 L8.3701,11.1489 L8.3701,9.3719 L9.4581,9.3719 L9.4581,7.9739 C9.4581,6.6609 10.1591,5.9769 11.7161,5.9769 L13.1641,5.9769 L13.1641,7.7969 Z" id="Path" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

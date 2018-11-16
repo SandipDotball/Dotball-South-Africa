@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dotball</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="description" content="Dotball | Play Fantasy Cricket Online in South Africa and Win Exciting Prizes.">
+  <meta name="author" content="Dotball">
+    <meta name="keywords" content="Daily Fantasy Game, Play Fantasy Cricket, Fantasy Football, How to Play Fantasy Cricket, Fantasy Sports Online, Premier Contest, Fantasy Contest, Football challenge Friends, T20 Cricket, Live Cricket, Live Football, South Africa Contest, Mzansi Super League, MSL cricket, MSL match, MSL live, MSL score, MSL scorecard, MSL stats, MSL schedule, MSL MSL results, MSL points table, MSL teams, MSL videos, MSL teams, MSL news, MSL fantasy, MSL t20">
+    <meta name="google-site-verification" content="" />
+    <meta charset="utf-32">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <link rel="shortcut icon" href="https://dotball.com/images/fav.ico" type="image/x-icon">
+  <!-- Favicons -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+ 
+  
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<script>
+  function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      return "Android";
+    }
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "iOS";
+    }
+
+    return "unknown";
+  }
+  const device = getMobileOperatingSystem();
+  if (device == "iOS") {
+    location.href = "https://itunes.apple.com/in/app/dotball/id1410622141?mt=8"
+  }
+  
+</script>
+
+<body>
+  <header class="dotball-header">
+      <nav class="dotball-navbar">
+        <div class="dotball-container">
+          <div class="nav-wrapper clearfix">
+
+            <a href="landing.html" class="brand-logo dotball-navbar__logo">
+              <img src="assets/images/logo.svg" alt="">
+            </a>
+            <div class="dotball-navbar__right right">
+              <ul id="nav-mobile" class="dotball-navbar__menus">
+                <li><a href="play.html">How to play</a></li>
+                <li><a href="#contactModal" class="modal-trigger">Contact us</a></li>
+                <li><a href="https://dotball.com/Login">Login</a></li>
+              </ul>
+              <a href="#" data-target="nav-mobile" class="sidenav-trigger">Menu</a>
+              <a href="https://dotball.com/Signup" class="waves-effect waves-light btn btn-signup"><span>Signup</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <section class="dotball-section scorepoint__section">
+    <div class="dotball-container">
+      <section class="page-container">
+        <header class="page-header">
+          <h1>Scores and Points</h1>
+          <p>Follow these 4 easy steps to get started:</p>
+        </header>
+        <section class="page-content">
+          <div class="scorepoint__section__system">
+            <div class="scorepoint__systemRow">
+              <div class="scorepoint__systemCol">
+                <a href="#t20__sectionArea" class="scorepoint__systemBlock">
+                  <div class="scorepoint__systemBlock__figure">
+                    <span class="">
+                      <img src="assets/images/t20.svg" alt="">
+                    </span>
+                  </div>
+                  <h3>T20 Cricket Points System</h3>
+                </a>
+              </div>
+              <div class="scorepoint__systemCol">
+                <a href="#odi__sectionArea" class="scorepoint__systemBlock">
+                  <div class="scorepoint__systemBlock__figure">
+                    <span class="">
+                      <img src="assets/images/odi.svg" alt="">
+                    </span>
+                  </div>
+                  <h3>ODI Points System</h3>
+                </a>
+              </div>
+              <div class="scorepoint__systemCol">
+                <a href="#test__sectionArea" class="scorepoint__systemBlock">
+                  <div class="scorepoint__systemBlock__figure">
+                    <span class="">
+                      <img src="assets/images/test.svg" alt="">
+                    </span>
+                  </div>
+                  <h3>Test Points System</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="scorepoint__section__container">
+            <div class="scorepoint__sectionArea T20" id="t20__sectionArea">
+              <h2>T20 Cricket Points System</h2>
+              <ul class="tabs scorepoint__mobileTabs t20MobileTabs">
+                <li class="tab col s4"><a class="active" href="#t20Batting">Batting</a></li>
+                <li class="tab col s4"><a href="#t20Bowling">Bowling</a></li>
+                <li class="tab col s4"><a href="#t20Fielding">Fielding</a></li>
+              </ul>
+              <div class="scorepoint__section__block" id="t20Batting">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Batting Points:</h2>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Base Points:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Base Points</h5>
+                        <span class="scorepoint__listitem__point">+1 Pt <small>(per run)</small></span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Duck: <br><small>(Not applicable for players listed as bowlers)</small></h5>
+                        <span class="scorepoint__listitem__point mins">-15 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Every 6 hit:</h5>
+                        <span class="scorepoint__listitem__point">+2 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Every 4 hit:</h5>
+                        <span class="scorepoint__listitem__point">+1 Pt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Batting Strike Bonus:</h3>
+                      <p>A player must score a minimum of 10 runs to be awarded the bonus.</p>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 0-74.99</h5>
+                        <span class="scorepoint__listitem__point mins">-15 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 75-99.99</h5>
+                        <span class="scorepoint__listitem__point mins">-10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 100-149.99</h5>
+                        <span class="scorepoint__listitem__point">+5 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 150-199.99</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 200</h5>
+                        <span class="scorepoint__listitem__point">+15 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Milestone Bonus:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 25 runs:</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 50 runs:</h5>
+                        <span class="scorepoint__listitem__point">+20 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 75 runs:</h5>
+                        <span class="scorepoint__listitem__point">+30 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 100 runs and thereafter:</h5>
+                        <span class="scorepoint__listitem__point">+40 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="scorepoint__section__block" id="t20Bowling">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Bowling Points:</h2>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Impact Points:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Per dot ball</h5>
+                        <span class="scorepoint__listitem__point">+1 Pt</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Per Maiden Over</h5>
+                        <span class="scorepoint__listitem__point">+20 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Pace Bonus Bonus:</h3>
+                      <p>A player must bowl more than 1 over to be awarded economy rate bonus</p>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 0-5</h5>
+                        <span class="scorepoint__listitem__point">+15 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 5-8</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 8-10</h5>
+                        <span class="scorepoint__listitem__point">+5 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 10-12</h5>
+                        <span class="scorepoint__listitem__point mins">-10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 12+</h5>
+                        <span class="scorepoint__listitem__point mins">-15 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Milestone Bonus:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 1st Wicket:</h5>
+                        <span class="scorepoint__listitem__point">+20 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 2nd Wicket</h5>
+                        <span class="scorepoint__listitem__point">+30 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 3rd Wicket</h5>
+                        <span class="scorepoint__listitem__point">+40 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 4th Wicket and thereafter</h5>
+                        <span class="scorepoint__listitem__point">+50 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="scorepoint__section__block" id="t20Fielding">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Fielding Points:</h2>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Regular Points</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For each catch</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For each stumping</h5>
+                        <span class="scorepoint__listitem__point">+15 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For a run-out <br><small>(to each player involved in the run out)</small></h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scorepoint__sectionArea ODI" id="odi__sectionArea">
+              <h2>ODI Points System</h2>
+              <ul class="tabs scorepoint__mobileTabs odiMobileTabs">
+                <li class="tab col s4"><a class="active" href="#odiBatting">Batting</a></li>
+                <li class="tab col s4"><a href="#odiBowling">Bowling</a></li>
+                <li class="tab col s4"><a href="#odiFielding">Fielding</a></li>
+              </ul>
+              <div class="scorepoint__section__block" id="odiBatting">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Batting Points:</h2>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Base Points:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Base Points</h5>
+                        <span class="scorepoint__listitem__point">+1 Pt <small>(per run)</small></span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Duck: <br><small>(Not applicable for players listed as bowlers)</small></h5>
+                        <span class="scorepoint__listitem__point mins">-15 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Every 6 hit:</h5>
+                        <span class="scorepoint__listitem__point">+2 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Every 4 hit:</h5>
+                        <span class="scorepoint__listitem__point">+1 Pt</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Strike Rate Bonus:</h3>
+                      <p>A player must score a minimum of 20 runs to be awarded the bonus.</p>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 0-74.99</h5>
+                        <span class="scorepoint__listitem__point mins">-10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 75-99.99</h5>
+                        <span class="scorepoint__listitem__point mins">0 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 100-149.99</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 150-199.99</h5>
+                        <span class="scorepoint__listitem__point">+15 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Strike Rate: 200</h5>
+                        <span class="scorepoint__listitem__point">+20 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Milestone Bonus:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 25 runs:</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 50 runs:</h5>
+                        <span class="scorepoint__listitem__point">+20 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 75 runs:</h5>
+                        <span class="scorepoint__listitem__point">+30 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Scoring 100 runs and thereafter:</h5>
+                        <span class="scorepoint__listitem__point">+40 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="scorepoint__section__block" id="odiBowling">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Bowling Points:</h2>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Impact Points:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Per dot ball</h5>
+                        <span class="scorepoint__listitem__point">+1 Pt</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Per Maiden Over</h5>
+                        <span class="scorepoint__listitem__point">+20 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Pace Bonus Bonus:</h3>
+                      <p>A player must bowl more than 2 over to be awarded economy rate bonus</p>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 0-5</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 5-8</h5>
+                        <span class="scorepoint__listitem__point">0 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 8-10</h5>
+                        <span class="scorepoint__listitem__point">-5 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 10-12</h5>
+                        <span class="scorepoint__listitem__point mins">-10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">Economy: 12+</h5>
+                        <span class="scorepoint__listitem__point mins">-15 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Milestone Bonus:</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 1st Wicket:</h5>
+                        <span class="scorepoint__listitem__point">+20 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 2nd Wicket</h5>
+                        <span class="scorepoint__listitem__point">+30 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 3rd Wicket</h5>
+                        <span class="scorepoint__listitem__point">+40 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For 4th Wicket and thereafter</h5>
+                        <span class="scorepoint__listitem__point">+50 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="scorepoint__section__block" id="odiFielding">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Fielding Points:</h2>
+                  <div class="scorepoint__section__group">
+                    <header class="scorepoint__section__group__header">
+                      <h3>Regular Points</h3>
+                      <span class="mdi mdi-chevron-down"></span>
+                    </header>
+                    <ul class="scorepoint__lists">
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For each catch</h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For each stumping</h5>
+                        <span class="scorepoint__listitem__point">+15 Pts</span>
+                      </li>
+                      <li class="scorepoint__listitem">
+                        <h5 class="scorepoint__listitem__title">For a run-out <br><small>(to each player involved in the run out)</small></h5>
+                        <span class="scorepoint__listitem__point">+10 Pts</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scorepoint__sectionArea TEST" id="test__sectionArea">
+              <h2>Test Points System</h2>
+              <p class="scorepoint__sectionArea__caption">Calculated per innings</p>
+              <ul class="tabs scorepoint__mobileTabs testMobileTabs">
+                <li class="tab col s4"><a class="active" href="#testBatting">Batting</a></li>
+                <li class="tab col s4"><a href="#testBowling">Bowling</a></li>
+                <li class="tab col s4"><a href="#testFielding">Fielding</a></li>
+              </ul>
+
+              <div class="scorepoint__section__block" id="testBatting">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Batting Points:</h2>
+                <div class="scorepoint__section__group">
+                  <header class="scorepoint__section__group__header">
+                    <h3>Base Points:</h3>
+                    <span class="mdi mdi-chevron-down"></span>
+                  </header>
+                  <ul class="scorepoint__lists">
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Base Points</h5>
+                      <span class="scorepoint__listitem__point">+1 Pt <small>(per run)</small></span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Duck: <br><small>(Not applicable for players listed as bowlers)</small></h5>
+                      <span class="scorepoint__listitem__point mins">-10 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Every 6 hit:</h5>
+                      <span class="scorepoint__listitem__point">+2 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Every 4 hit:</h5>
+                      <span class="scorepoint__listitem__point">+1 Pt</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="scorepoint__section__group">
+                  <header class="scorepoint__section__group__header">
+                    <h3>Milestone Bonus:</h3>
+                    <span class="mdi mdi-chevron-down"></span>
+                  </header>
+                  <ul class="scorepoint__lists">
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Scoring 25 runs:</h5>
+                      <span class="scorepoint__listitem__point">+10 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Scoring 50 runs:</h5>
+                      <span class="scorepoint__listitem__point">+20 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Scoring 75 runs:</h5>
+                      <span class="scorepoint__listitem__point">+30 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">Scoring 100 runs and thereafter:</h5>
+                      <span class="scorepoint__listitem__point">+40 Pts</span>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+              <div class="scorepoint__section__block" id="testBowling">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Bowling Points:</h2>
+                <div class="scorepoint__section__group">
+                  <header class="scorepoint__section__group__header">
+                    <h3>Milestone Bonus:</h3>
+                    <span class="mdi mdi-chevron-down"></span>
+                  </header>
+                  <ul class="scorepoint__lists">
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">For 1st Wicket:</h5>
+                      <span class="scorepoint__listitem__point">+20 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">For 2nd Wicket</h5>
+                      <span class="scorepoint__listitem__point">+30 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">For 3rd Wicket</h5>
+                      <span class="scorepoint__listitem__point">+40 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">For 4th Wicket and thereafter</h5>
+                      <span class="scorepoint__listitem__point">+50 Pts</span>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+              <div class="scorepoint__section__block" id="testFielding">
+                <div class="scorepoint__section__row">
+                  <h2 class="scorepoint__subTitle">Fielding Points:</h2>
+                <div class="scorepoint__section__group">
+                  <header class="scorepoint__section__group__header">
+                    <h3>Regular Points</h3>
+                    <span class="mdi mdi-chevron-down"></span>
+                  </header>
+                  <ul class="scorepoint__lists">
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">For each catch</h5>
+                      <span class="scorepoint__listitem__point">+10 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">For each stumping</h5>
+                      <span class="scorepoint__listitem__point">+15 Pts</span>
+                    </li>
+                    <li class="scorepoint__listitem">
+                      <h5 class="scorepoint__listitem__title">For a run-out <br><small>(to each player involved in the run out)</small></h5>
+                      <span class="scorepoint__listitem__point">+10 Pts</span>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="scorepoint__section__block scorepoint__section__blockBorder">
+              <div class="scorepoint__section__row">
+                <div class="scorepoint__section__groupfull">
+                  <header class="scorepoint__section__group__header">
+                    <h3>General Points:</h3>
+                  </header>
+                  <p><strong>(i) Captain:</strong> All attributed points will be multiplied by X2 times for the assigned virtual captain.</p>
+                  <p><strong>(ii) Vice-Captain:</strong> All attributed points will be multiplied by X1.5 times for the assigned virtual Vice-captain.</p>
+                  <p><strong>(iii) Substitute:</strong> 0 Points <br>
+                  *However, Concussion Substitutes (as defined in the Cricket Australia Playing Conditions for Domestic Matches) will be granted points for their contribution, governed by the Cricket Australia Playing Conditions for Domestic Matches.</p>
+                  <p><strong>Transferred player:</strong> 0 Points <br>
+                  *If a real-life player is transferred in the period between scheduled updates, such a transfer will not be reflected in the list of players until the next update. It’s to be noted that while the transferred player will be available for selection in the transferred squad’s roster of players in a contest during the intervening period, no points will be assigned to that player during that contest.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+  <footer class="footer-container">
+    <div class="footer-top-container">
+      <div class="dotball-container">
+        <ul class="footer-nav__ul">
+          <li><a href="play.html">How to play</a></li>
+          <li><a href="prizes.html">Prizes</a></li>
+          <li class="active"><a href="score-point.html">Scores & Points</a></li>
+          <li><a href="rules.html">FAQ</a></li>
+          <li><a href="terms-policy.html">Terms of Service</a></li>
+          <li><a href="#contactModal" class="modal-trigger">Contact Us</a></li>
+        </ul>        
+      </div>
+    </div>
+    <div class="footer-middle-container">
+      <div class="dotball-container">
+        <div class="dotball-social__row">
+          <div class="dotball-social__col dotball-social__col1">
+            <article class="dotball-social__content">
+              <div class="footer-top__social">
+                <div class="footerlogo">
+                  <a href="">
+                    <img src="assets/images/logo.svg" alt="">
+                  </a>
+                </div>
+                <p>To stay up-to-date and engage with the community, please follow our channels.</p>
+                <ul class="footerSocial">
+                  <li>
+                    <a target="_blank" href="https://www.facebook.com/dotballglobal/">
+                      <span class="dicon dicon-facebook"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://twitter.com/dotballglobal">
+                      <span class="dicon dicon-twitter"></span>
+                    </a>
+                  </li>
+                  <li><a target="_blank" href="https://www.instagram.com/dotballglobal/">
+                      <span class="dicon dicon-instagram"></span>
+                    </a>
+                  </li>
+                  <li><a target="_blank" href="https://chat.whatsapp.com/G8tS9JWzSKf4kRmIPaSCdR">
+                      <span class="dicon dicon-whatsup"></span>
+                    </a>
+                  </li>
+                  </li>
+                </ul>
+                
+              </div>
+            </article>
+          </div>
+          <div class="dotball-social__col dotball-social__col2">
+            <article class="dotball-social__content">
+              <h2>Official Fantasy  Partners</h2>
+              <p><img src="assets/images/mzansi.png" alt="" width="149" height="74"></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p class="footerCopyright">Copyright©2018 Dotball Interactive Private Limited. All rights reserved. </p>
+    </div>
+  </footer>
+
+  <div id="contactModal" class="modal contactModal-modal">
+    <div class="modal-content">
+      <div class="contactModal-modal__formSection">
+        <h2 class="contactModal-modal__title">Contact us</h2>
+        <p class="contactModal-modal__text">Customer is the King and We love to hear from you. Some of the answers
+          you're looking for can be found in our <span>FAQ</span> or in our <span>HELP</span> section.</p>
+        <div class="contactModal-modal__area">
+          <form name="contactModal-form" id="contactModalform" method="post">
+            <div class="input-field">
+              <input id="contactemail" type="email" class="validate" name="phone">
+              <label for="contactemail">Enter email ID</label>
+            </div>
+            <div class="input-field">
+              <input id="contactphone" type="tel" class="validate" name="phone">
+              <label for="contactphone">Enter registered Mobile Number</label>
+            </div>
+            <div class="input-field">
+              <textarea id="contactmassage" class="materialize-textarea"></textarea>
+              <label for="contactmassage">Please type your query here.</label>
+            </div>
+            <button class="btn waves-effect waves-light btn contactModal-modal__btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+if(location.search){
+    document.getElementsByClassName('dotball-header')[0].classList.add('hide')
+    document.getElementsByClassName('footer-container')[0].classList.add('hide')
+    if(location.search == "?T20"){
+      document.getElementsByClassName('scorepoint__sectionArea')[1].classList.add('hide')
+      document.getElementsByClassName('scorepoint__sectionArea')[2].classList.add('hide')
+    }
+    if(location.search == "?ODI"){
+      document.getElementsByClassName('scorepoint__sectionArea')[0].classList.add('hide')
+      document.getElementsByClassName('scorepoint__sectionArea')[2].classList.add('hide')
+    }
+    if(location.search == "?TEST"){
+      document.getElementsByClassName('scorepoint__sectionArea')[0].classList.add('hide')
+      document.getElementsByClassName('scorepoint__sectionArea')[1].classList.add('hide')
+    }
+  }
+  </script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="assets/js/base.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
